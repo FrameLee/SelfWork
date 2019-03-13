@@ -1,0 +1,328 @@
+.Individual {
+  padding: 24px;
+  .ant-input-affix-wrapper .ant-input:focus {
+    border: none;
+    box-shadow: none;
+  }
+  .ant-input:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.input {
+  width: 100%;
+  font-size: 13px;
+  color: #262626;
+  letter-spacing: 0;
+  line-height: 26px;
+  &::-webkit-input-placeholder{
+    color: #8C8C8C;
+  }
+  &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #8C8C8C;
+  }
+  &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #8C8C8C;
+  }
+  &:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color: #8C8C8C;
+  }
+}
+
+.inputDiv {
+  border-bottom: 1px #E8E8E8 solid;
+}
+
+.passwordDiv {
+  margin-top: 30px;
+}
+
+.phoneInput {
+  border: none;
+  &:active,&:focus {
+  outline: none;
+  box-shadow: none;
+  }
+}
+
+.passwordInput {
+  input {
+    border: none;
+    &:active,&:focus {
+    outline: none;
+    box-shadow: none;
+    }
+    &::-webkit-input-placeholder{
+    color: #8C8C8C;
+    }
+    &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+      color: #8C8C8C;
+    }
+    &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+      color: #8C8C8C;
+    }
+    &:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+      color: #8C8C8C;
+    }
+  }
+}
+
+.verificationDiv {
+  margin-top: 33px;
+}
+
+.verificationInput {
+  input {
+    border: none;
+    &:active,&:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    &::-webkit-input-placeholder{
+      color: #8C8C8C;
+    }
+    &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+      color: #8C8C8C;
+    }
+    &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+      color: #8C8C8C;
+    }
+    &:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+      color: #8C8C8C;
+    }
+  }
+}
+
+.verificationImgBox {
+  width: 75px;
+  height: 30px;
+  margin-bottom: 8px;
+  margin-right: -12px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.forgetBtn {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.getOTPBtnBox {
+  border-left: 1px solid #E8E8E8;
+  height: 50%;
+  .getOTPBtn {
+    height: 100%;
+    border: none;
+    margin: 0 10px 0 20px;
+    padding: 0;
+    color: #7331A5;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.ncell-eye-open {
+  font-size: 16px;
+  border-right: 1px solid #E8E8E8;
+  padding-right: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+  &:hover {
+    color: #7331A5;
+  }
+}
+.ncell-eye-close {
+  font-size: 16px;
+  border-right: 1px solid #E8E8E8;
+  padding-right: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+  &:hover {
+    color: #7331A5;
+  }
+}
+
+.terms {
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: left;
+  font-family: 'Quicksand-Regular';
+  font-size: 12px;
+  color: #595959;
+  letter-spacing: 0;
+  line-height: 26px;
+  .termsSpan {
+    padding: 0;
+    color: #7331A5;
+    text-decoration: underline;
+  }
+  .termsTips {
+    color: #f00;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+.termsModal {
+  height: 70%;
+  .ant-modal-header {
+    background-color: #E8DFED;
+  }
+  .ant-modal-title {
+    color: #7331A5;
+    font-family: 'Quicksand-Bold';
+  }
+  .ant-modal-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .ant-modal-body {
+    height: 100%;
+    overflow: scroll;
+    padding-bottom: 80px;
+  }
+  .termsModalBtnBox {
+    margin-top: 10px;
+    text-align: center;
+    button {
+      margin: 0 10px;
+    }
+  }
+  .termsModalBox {
+    height: 100%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+      background-color: #fff;
+    } /* 滚动条的内层滑轨背景颜色 */
+
+    &::-webkit-scrollbar-track {
+      background-color: #fff;
+    } /* 滚动条的外层滑轨背景颜色 */
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fff;
+    } /* 滚动条的内层滑块颜色 */
+
+    &::-webkit-scrollbar-button {
+      background-color: #fff;
+      display: none;
+    } /* 滑轨两头的监听按钮颜色 */
+  }
+}
+
+.loginBtnBox {
+  margin-top: 24px;
+  height: 45px;
+}
+
+.loginBtn {
+  width: 100%;
+  height: 100%;
+  font-family: 'Quicksand-Bold';
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 22.5px;
+  background: #B34480;
+  border: none;
+  background: -webkit-linear-gradient(left, #2B2A64,#5E2B70, #B34480);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #2B2A64,#5E2B70, #B34480);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #2B2A64,#5E2B70, #B34480);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #2B2A64,#5E2B70, #B34480);
+  &:hover,&:focus {
+    color: #FFFFFF;
+    background: #B34480;
+    border: none;
+    background: -webkit-linear-gradient(left, #2B2A64,#5E2B70, #B34480);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #2B2A64,#5E2B70, #B34480);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #2B2A64,#5E2B70, #B34480);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #2B2A64,#5E2B70, #B34480);
+  }
+}
+
+.loginWith {
+  cursor: pointer;
+  margin-top: 8px;
+  text-align: center;
+  font-family: 'Quicksand-Regular';
+  font-size: 12px;
+  color: #8C8C8C;
+  letter-spacing: 0;
+  line-height: 24px;
+  &:hover {
+    color: #7331A5;
+  }
+}
+
+.linksBox {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-family: 'Quicksand-Regular';
+    vertical-align: middle;
+    font-size: 12px;
+    color: #595959;
+    letter-spacing: 0;
+    line-height: 20px;
+    padding-left: 8px;
+  }
+}
+
+.ncell-facebook {
+  color: #3B5998;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.ncell-google {
+  vertical-align: middle;
+  color: #FBBB00;
+  font-size: 20px;
+}
+
+.registerBox {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-family: 'Quicksand-Regular';
+    text-decoration: underline;
+    font-size: 12px;
+    color: #7331A5;
+    letter-spacing: 0;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  a {
+    font-family: 'Quicksand-Regular';
+    text-decoration: underline;
+    font-size: 12px;
+    color: #7331A5;
+    letter-spacing: 0;
+    line-height: 24px;
+    cursor: pointer;
+  }
+}

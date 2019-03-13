@@ -1,0 +1,115 @@
+.header {
+  height: 77px;
+  // background: url(../../assets/bg-top.png) no-repeat center 0;
+  background: #5E2B70;
+  // background: -webkit-linear-gradient(left, #2B2A64 0%, #5E2B70 21%, #B34480 100%);
+  // /* Safari 5.1 - 6.0 */
+  // background: -o-linear-gradient(right, #2B2A64 0%, #5E2B70 21%, #B34480 100%);
+  // /* Opera 11.1 - 12.0 */
+  // background: -moz-linear-gradient(right, #2B2A64 0%, #5E2B70 21%, #B34480 100%);
+  // /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #2B2A64 0%, #5E2B70 21%, #B34480 100%);
+  display: flex;
+  .headerLeft {
+    display: flex;
+    .headerLogo {
+      width: 169px;
+      // height: 77px;
+      margin-right: 10px;
+      overflow: hidden;
+      >img {
+        // height: 100%;
+        width: 100%;
+        display: block;
+      }
+    }
+    .headerTitle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 15px 0;
+      color: #fff;
+      .bigTitle {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 100;
+      }
+      .smallTitle {
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 1;
+      }
+    }
+  }
+  .headerSpace {
+    flex: 1;
+  }
+  .headerRight {
+    width: 250px;
+    display: flex;
+    padding-right: 90px;
+  }
+  .headerRightSm {
+    display: none;
+    padding-right: 10px;
+    .splitLine {
+      padding: 0 5px;
+    }
+  }
+  .headerRight,.headerRightSm {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff;
+    div:not(:first-child) {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .headerRightlgout {
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header{
+    .headerRight {
+      display: none;
+    }
+    .headerRightSm {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .header{
+    .headerRight {
+      display: none;
+    }
+    .headerLeft {
+      .headerLogo {
+        width: 8.3rem
+      }
+      .headerTitle {
+        .bigTitle {
+          font-size: 1rem;
+          line-height: 1;
+          font-weight: 100;
+        }
+        .smallTitle {
+          font-size: 0.6rem;
+          font-weight: 100;
+          line-height: 1;
+        }
+      }
+    }
+    .headerRightSm {
+      display: flex;
+    }
+  }
+}
+// @media screen and (max-width: 500px) {
+//   .language {
+//     display: none;
+//   }
+// }

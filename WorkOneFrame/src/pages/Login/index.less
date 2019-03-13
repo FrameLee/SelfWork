@@ -1,0 +1,212 @@
+@media screen and (max-width: 420px) {
+  .loginPage {
+    height:100vh;
+    background: #fff;
+  }
+  .loginContainer {
+    height:100%;
+  }
+  .loginpic {
+    display: none;
+  }
+  .loginHeader {
+    // flex-wrap: wrap;
+    justify-content: center;
+  }
+  .loginTitle {
+    font-size: 14px !important;
+  }
+  .loginBox {
+    margin: 20px auto 0;
+    &>div {
+      background: #FFFFFF;
+    }
+     .ant-tabs-tab:hover {
+      color: #7331A5;
+    }
+    .ant-tabs-tab-active {
+      font-family: 'Quicksand-Bold';
+      font-size: 16px;
+      color: #7331A5;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px;
+    }
+    .ant-tabs-ink-bar {
+      background-color: #7331A5;
+    }
+  }
+  .loginLanguage {
+    width: 100px;
+    align-self: auto;
+    padding-bottom: 6px;
+    .ant-select-selection {
+      border: none;
+      outline: none;
+      .ant-select-selection-selected-value {
+        color: #363636;
+        font-family: 'Quicksand-Regular';
+      }
+      .ant-select-arrow {
+        color: #363636;
+        font-family: 'Quicksand-Regular';
+      }
+      background-color: rgba(255,255,255,0);
+      &:focus,&:active {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) and (min-width: 420px) {
+  .loginPage {
+    height:100vh;
+    background: #fff;
+  }
+
+  .loginContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginpic {
+    display: none;
+  }
+
+  .loginBox {
+    margin: 20px auto 0;
+    &>div {
+      width: 376px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 22px 0 rgba(115,49,165,0.47);
+      border-radius: 8px;
+    }
+     .ant-tabs-tab:hover {
+      color: #7331A5;
+    }
+    .ant-tabs-tab-active {
+      font-family: 'Quicksand-Bold';
+      font-size: 16px;
+      color: #7331A5;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px;
+    }
+    .ant-tabs-ink-bar {
+      background-color: #7331A5;
+    }
+  }
+
+  .loginLanguage {
+    width: 180px;
+    padding-bottom: 6px;
+    .ant-select-selection {
+      border: none;
+      outline: none;
+      .ant-select-selection-selected-value {
+        color: #363636;
+        font-family: 'Quicksand-Regular';
+      }
+      .ant-select-arrow {
+        color: #363636;
+        font-family: 'Quicksand-Regular';
+      }
+      background-color: rgba(255,255,255,0);
+      &:focus,&:active {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .loginPage {
+    height:100vh;
+    background: url(../../assets/bg-login.png) no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .loginContainer {
+    height: 540px;
+    left: 215px;
+    top: 15%;
+    position: absolute;
+  }
+  .loginpic {
+    height: 480px;
+    width: 630px;
+    left: 720px;
+    top: 24%;
+    position: absolute;
+    img {
+      height: 480px;
+      width: 630px;
+    }
+  }
+
+  .loginBox {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    width: 376px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 22px 0 rgba(115,49,165,0.47);
+    border-radius: 8px;
+    .ant-tabs-tab:hover {
+      color: #7331A5;
+    }
+    .ant-tabs-tab-active {
+      font-family: 'Quicksand-Bold';
+      font-size: 16px;
+      color: #7331A5;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px;
+    }
+    .ant-tabs-ink-bar {
+      background-color: #7331A5;
+    }
+  }
+  .loginLanguage {
+    width: 100px;
+    margin-left: 67px;
+    padding-bottom: 6px;
+    &>div {
+      width: 100px;
+    }
+  }
+}
+
+.loginHeader {
+  width: 376px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.loginLogo img {
+  width: 140px;
+  height: 60px;
+}
+
+.loginTitle {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Quicksand-Regular';
+  font-size: 16px;
+  color: #363636;
+  letter-spacing: 0;
+  line-height: 36px;
+  white-space: nowrap;
+  padding-left: 16px;
+}

@@ -1,0 +1,387 @@
+@font-face
+{
+  font-family: QuicksandRegular;
+  src: url('./assets/font/Quicksand-Regular.otf'),
+      url('./assets/font/Quicksand-Regular.ttf');
+}
+@font-face
+{
+  font-family: QuicksandBold;
+  src: url('./assets/font/Quicksand-Bold.ttf');
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  /* vertical-align: baseline */
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block
+}
+
+li,ol,ul {
+  list-style: none
+}
+
+html {
+  width: 100%;
+  line-height: 1;
+  outline: 0;
+  -webkit-text-size-adjust:none;
+  box-sizing:border-box;
+  font-size:12px;
+  font-family: 'QuicksandRegular';
+}
+
+body {
+  width: 100%;
+  -webkit-text-size-adjust: 100% !important;
+  overflow-x:hidden;
+  background: #F6F6F6;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0!important;
+}
+#root {
+  min-height: 100%;
+  min-width: 308px;
+  margin: 0 auto!important;
+  background: #F6F6F6;
+}
+#root > div {
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: .0313rem
+}
+
+img{
+  border:0;
+}
+
+a,a:hover,a:active{
+  text-decoration:none;
+}
+
+input,textarea {
+  outline: 0;
+  resize: none
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+a,div,header,span {
+  -webkit-appearance: none !important;
+  -webkit-tap-highlight-color:transparent;
+  margin: 0;
+}
+
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+input:focus{outline:none;box-shadow:none}
+
+input:required:invalid{box-shadow: none;-moz-box-shadow:none}
+
+input[required]:invalid, input:focus:invalid, textarea[required]:invalid, textarea:focus:invalid{box-shadow: none;}
+
+input:-webkit-autofill { box-shadow: 0 0 0 1000px white inset; }
+
+ul li{list-style: none;}
+
+.dp_none{display: block !important;}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder{
+  color:#c7c6c6;
+  font-family: "'Quicksand-Regular'", Helvetica,'Pingfang SC',Tahoma,Arial,'Microsoft YaHei','sans-serif';
+}
+
+.overflowH{
+  overflow: hidden;
+}
+
+.l{
+  float: left;
+}
+
+.r{
+  float: right;
+}
+button {
+  outline: none;
+}
+select{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+}
+
+select::-ms-expand { display: none; }
+
+.under-line::after{
+  content: '';
+  position: absolute;
+  background-color: #e4e4e4;
+  display: block;
+  z-index: 2;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+@media only screen and (min-width: 320PX) and (max-width:360PX) {
+  html {
+    font-size:13.65px
+  }
+}
+
+@media only screen and (min-width: 360PX) and (max-width:375PX) {
+  html {
+    font-size:15.36px
+  }
+}
+
+@media only screen and (min-width: 375PX) and (max-width:390PX) {
+  html {
+    font-size:16px
+  }
+}
+
+@media only screen and (min-width: 390PX) and (max-width:414PX) {
+  html {
+    font-size:16.64px
+  }
+}
+
+@media only screen and (min-width: 414PX) and (max-width:640PX) {
+  html {
+    font-size:17.664px
+  }
+}
+
+@media screen and (min-width: 640PX) {
+  html {
+    font-size:20px
+  }
+}
+
+@media screen and (max-width: 1200PX) {
+  body,#root {
+    background: #fff;
+  }
+}
+
+
+
+@media (-webkit-min-device-pixel-ratio: 3){
+    /* .container{
+        background: url(./assets/homeBg@3x.png) no-repeat top center 100%/auto;
+    } */
+}
+
+/* common */
+input::-webkit-input-placeholder{
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: normal;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: normal;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: normal;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
+
+/* ---------------scroll for chrome brower--------------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius:1000px;
+}
+
+/* antd card meta 中的form表单元素 */
+.ant-card-meta .ant-form-item{
+  margin-bottom: 14px;
+}
+/* antd card meta 中的title */
+.ant-card-meta-title {
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0;
+  line-height: 34px;
+  font-family: 'QuicksandBold';
+}
+/* antd card meta 中的detail,因为其overflow:hidden导致自定义尼泊尔日历组件不能完全显示 */
+.ant-card-meta-detail{
+  overflow:visible!important;
+}
+/* 定制button*/
+.ant-btn{
+  border-radius: 1000px!important;
+  padding:0 20px!important;
+}
+.ant-btn.ant-btn-custom,
+.ant-btn.ant-btn-custom:hover,
+.ant-btn.ant-btn-custom:focus,
+.ant-btn.ant-btn-custom.active,
+.ant-btn.ant-btn-custom:active{
+  color: #fff;
+  background: linear-gradient(to right, #2B2A64 0%, #5E2B70 50%,#B34480 100%);
+  border-radius: 1000px;
+}
+/* antd table样式 */
+.ant-table-thead > tr > th {
+  color: #262626;
+  font-family:'QuicksandBold';
+  font-size: 14px;
+  /* background: #FFFFFF!important; */
+  /* border-bottom: 1px solid #e8e8e8; */
+}
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td{
+  background:#faf3ff!important;
+}
+.ant-table td { white-space: nowrap; }
+.ant-table th { white-space: nowrap; }
+.ant-table-body { overflow-x: auto!important }
+#root .ant-pagination-item-active {
+  background: #7331a5;
+
+}
+#root .ant-pagination-item-active > a {
+  color: #fff;
+}
+
+/* 定制check类型的radio  start*/
+.checkTypeRadio .ant-radio-wrapper {
+  border-radius: 3px;
+  line-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #e8e8e8;
+}
+.checkTypeRadio .ant-radio-wrapper .ant-radio {
+  display: none;
+}
+.checkTypeRadio .ant-radio-wrapper.ant-radio-wrapper-checked {
+  border: 1px solid #7331A5;
+  position: relative;
+  /* overflow: hidden; */
+}
+.checkTypeRadio .ant-radio-wrapper.ant-radio-wrapper-checked:before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  border-top:10px solid transparent;
+  border-left:10px solid transparent;
+  border-right:10px solid #7331A5;
+  border-bottom:10px solid #7331A5;
+}
+.checkTypeRadio .ant-radio-wrapper.ant-radio-wrapper-checked:after {
+  position: absolute;
+  bottom: 5px;
+  right: 1px;
+  content: '';
+  -ms-transform: rotate(45deg) skewX(-10deg);
+  transform: rotateZ(-45deg) skewX(-10deg);
+  width: 9px;
+  height: 4px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+}
+/* 定制check类型的radio  end*/
+
+/* 定制modal-confirm-btns 水平居中*/
+.ant-modal-confirm-btns{
+  float: initial!important;
+  text-align: center!important;
+}
+/* 定制modal-confirm-error类型的Icon颜色 水平居中*/
+.ModalErrorConfirm.ant-modal-confirm-confirm .ant-modal-confirm-body > .anticon{
+  color:#f5222d;
+}
+
+/* 按钮组 */
+.btn-group .ant-btn{
+  margin-right:8px;
+}
+.btn-group .ant-btn .icon{
+  margin-right:4px;
+}
+
+/* 带有信息展示的modal */
+.ant-modal-content .ant-modal-header{
+  border-bottom:none;
+  background:#E8DFED; 
+}
+.ant-modal-content .ant-modal-header .ant-modal-title{
+  font-family: QuicksandBold;
+  font-size: 18px;
+  color: #7331A5;
+  letter-spacing: 0;
+}
+/*侧边栏的样式*/
+.ant-menu-inline .ant-menu-item, .ant-menu-inline .ant-menu-submenu-title{
+  width: calc(100% + 0px)!important;
+}
+
+/* 表单不要冒号 */
+.ant-form-item-label label:after{
+  content:' '!important;
+}
+.ant-form:not(.ant-form-inline) .ant-form-item-label{
+  padding-right:16px!important;
+}
+
+/* 设置下拉菜单选中，hover颜色 */
+.ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item:hover {
+  background-color: #faf3ff!important;
+}
